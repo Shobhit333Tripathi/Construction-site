@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-yellow-600 text-white py-2">
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
+                <span><i class="fas fa-phone"></i> +1234567890</span>
+                <span><i class="fas fa-envelope"></i> info@example.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg z-50 sticky top-0">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold mb-4 md:mb-0">
+                    CONSTRUCTION
+                </div>
+                <div class="flex flex-wrap justify-center space-x-10 font-bold">
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">Home</a>
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">About</a>
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">Services</a>
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">Work</a>
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">Pages</a>
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">Blog</a>
+                    <a href="#" class="hover:text-yellow-600 mb-2 md:mb-0">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="Home" class="relative h-[300px] sm:h-[400px] md:h-[500px]">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <img src="https://media.istockphoto.com/id/1406077905/photo/new-house-building-at-the-construction-site.jpg?s=612x612&w=0&k=20&c=DUpuARwIdKNEmt--VUNnFrb0s0AjiSWvyX85PhsdlcE=" alt="Construction Site" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Quality Features -->
+    <div class="container mx-auto px-4 -mt-20 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 text-white p-8">
+                <h3 class="text-xl font-bold mb-4">Quality Materials</h3>
+                <p class="mb-4">We use only the highest quality materials in all our construction projects.</p>
+                <a href="#" class="text-yellow-600">Read More →</a>
+            </div>
+            <div class="bg-yellow-600 text-white p-8">
+                <h3 class="text-xl font-bold mb-4">Quality Standards</h3>
+                <p class="mb-4">Our work meets and exceeds industry quality standards.</p>
+                <a href="#" class="text-white">Read More →</a>
+            </div>
+            <div class="bg-white p-8 shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Quality Assurance</h3>
+                <p class="mb-4">Every project undergoes rigorous quality assurance testing.</p>
+                <a href="#" class="text-yellow-600">Read More →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="About" class="container mx-auto px-4 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">ABOUT YOUR COMPANY</h2>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="bg-yellow-600 text-white px-6 py-3 rounded">LEARN MORE</button>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://www.designingbuildings.co.uk/w/images/7/76/Projectteam.jpg" alt="Team" class="w-full h-full object-cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvX6Qlmc37oTwYEWhIQj1TIWAPUhsRdj5elQ&s" alt="Construction" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="Services" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">OUR SERVICES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDsMteEEoXa_EW7hVwCjwo4H7X4Q0AIm0awg&s" alt="Building" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold mb-2">Building</h3>
+                    <p class="mb-4">Professional building services for all your construction needs.</p>
+                    <a href="#" class="text-yellow-600">Read More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9X0BJ-ADy6lR3NxFhBb1hBNNGZ2gvoc_jA&s" alt="Renovation" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold mb-2">Renovation</h3>
+                    <p class="mb-4">Complete renovation services for residential and commercial properties.</p>
+                    <a href="#" class="text-yellow-600">Read More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Riwm72KYhnS8V7XpnG3ZBAjIloQ6s09uiw&s" alt="Construction" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold mb-2">Construction</h3>
+                    <p class="mb-4">Full-scale construction projects from ground up.</p>
+                    <a href="#" class="text-yellow-600">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="bg-yellow-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">We have 15 Years experience</h2>
+            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <span class="text-2xl font-bold">(+91) 1234567890</span>
+                <button class="bg-black text-white hover:bg-white hover:text-black hover:font-bold hover:rounded-2xl px-6 py-3 rounded">Get Free Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="container mx-auto px-4 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">What our client says</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgjhqdf7P7xJaxoUoBeSnTE4RbABBjBB6nw&s" alt="Client" class="w-20 h-20 rounded-full">
+                <div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <strong>John Doe</strong>
+                    <p class="text-gray-600">CEO, Company</p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/049/647/319/small_2x/a-man-with-a-beard-and-a-smile-is-surrounded-by-gold-confetti-the-man-is-happy-and-enjoying-the-moment-photo.jpg" alt="Client" class="w-20 h-20 rounded-full">
+                <div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <strong>Jane Smith</strong>
+                    <p class="text-gray-600">Director, Company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="Contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">CONSTRUCTION</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Link</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#">Building</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Street, City, Country</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@example.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> +1234567890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>© 2024 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
