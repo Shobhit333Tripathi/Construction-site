@@ -14,11 +14,11 @@
 </head>
 <body>
     <!-- Top Bar -->
-    <div class="bg-yellow-600 text-white py-2">
+    <section class="bg-yellow-600 text-white py-2">
         <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
                 <span><i class="fas fa-phone"></i> +1234567890</span>
-                <span><i class="fas fa-envelope"></i> info@example.com</span>
+                <span><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84edeae2ebc4e1fce5e9f4e8e1aae7ebe9">[email&#160;protected]</a></span>
             </div>
             <div class="flex items-center space-x-4">
                 <a href="#"><i class="fab fa-facebook"></i></a>
@@ -26,36 +26,41 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Navigation -->
     <nav class="bg-white shadow-lg z-50 sticky top-0">
         <div class="container mx-auto px-4 py-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-2xl font-bold mb-4 md:mb-0">
-                    CONSTRUCTION
+                <div class="flex justify-between w-full md:w-auto">
+                    <div class="text-2xl font-bold">
+                        CONSTRUCTION
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-                <div class="flex flex-wrap justify-center space-x-10 font-bold">
-                    <a href="#Home" class="hover:text-yellow-600 mb-2 md:mb-0">Home</a>
-                    <a href="#About" class="hover:text-yellow-600 mb-2 md:mb-0">About</a>
-                    <a href="#Services" class="hover:text-yellow-600 mb-2 md:mb-0">Services</a>
-                    <a href="#Work" class="hover:text-yellow-600 mb-2 md:mb-0">Work</a>
-                    <a href="#Pages" class="hover:text-yellow-600 mb-2 md:mb-0">Pages</a>
-                    <a href="#Blog" class="hover:text-yellow-600 mb-2 md:mb-0">Blog</a>
-                    <a href="#Contact" class="hover:text-yellow-600 mb-2 md:mb-0">Contact</a>
+                <div id="mobile-menu" class="hidden md:flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-10 font-bold w-full md:w-auto">
+                    <a href="#Home" class="hover:text-yellow-600">Home</a>
+                    <a href="#About" class="hover:text-yellow-600">About</a>
+                    <a href="#Services" class="hover:text-yellow-600">Services</a>
+                    <a href="#Work" class="hover:text-yellow-600">Work</a>
+                    <a href="#Pages" class="hover:text-yellow-600">Pages</a>
+                    <a href="#Blog" class="hover:text-yellow-600">Blog</a>
+                    <a href="#Contact" class="hover:text-yellow-600">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div id="Home" class="relative h-[300px] sm:h-[400px] md:h-[500px]">
+    <section id="Home" class="relative h-[300px] sm:h-[400px] md:h-[500px]">
         <div class="absolute inset-0 bg-black/50"></div>
         <img src="https://media.istockphoto.com/id/1406077905/photo/new-house-building-at-the-construction-site.jpg?s=612x612&w=0&k=20&c=DUpuARwIdKNEmt--VUNnFrb0s0AjiSWvyX85PhsdlcE=" alt="Construction Site" class="w-full h-full object-cover">
-    </div>
+    </section>
 
     <!-- Quality Features -->
-    <div class="container mx-auto px-4 -mt-20 relative z-10">
+    <section class="container mx-auto px-4 -mt-20 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-gray-900 text-white p-8">
                 <h3 class="text-xl font-bold mb-4">Quality Materials</h3>
@@ -73,25 +78,25 @@
                 <a href="#" class="text-yellow-600">Read More →</a>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <div id="About" class="container mx-auto px-4 py-20">
+    <section id="About" class="container mx-auto px-4 py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
                 <h2 class="text-3xl font-bold mb-6">ABOUT YOUR COMPANY</h2>
                 <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="bg-yellow-600 text-white px-6 py-3 rounded">LEARN MORE</button>
+                <button class="bg-gray-900 text-white hover:bg-yellow-600 hover:text-black hover:font-extrabold hover:rounded-xl px-6 py-3 rounded">LEARN MORE</button>
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <img src="https://www.designingbuildings.co.uk/w/images/7/76/Projectteam.jpg" alt="Team" class="w-full h-full object-cover">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvX6Qlmc37oTwYEWhIQj1TIWAPUhsRdj5elQ&s" alt="Construction" class="w-full h-full object-cover">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Services Section -->
-    <div id="Services" class="bg-gray-100 py-20">
+    <section id="Services" class="bg-gray-100 py-20">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">OUR SERVICES</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -115,45 +120,91 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Experience Section -->
-    <div class="bg-yellow-600 text-white py-20">
+    <section class="bg-yellow-600 text-white py-20">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">We have 15 Years experience</h2>
             <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <span class="text-2xl font-bold">(+91) 1234567890</span>
-                <button class="bg-black text-white hover:bg-white hover:text-black hover:font-bold hover:rounded-2xl px-6 py-3 rounded">Get Free Quote</button>
+                <button class="bg-gray-900 text-white hover:bg-white hover:text-black hover:font-bold hover:rounded-2xl px-6 py-3 rounded">Get Free Quote</button>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Testimonials -->
-    <div class="container mx-auto px-4 py-20">
-        <h2 class="text-3xl font-bold text-center mb-12">What our client says</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgjhqdf7P7xJaxoUoBeSnTE4RbABBjBB6nw&s" alt="Client" class="w-20 h-20 rounded-full">
-                <div>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <strong>John Doe</strong>
-                    <p class="text-gray-600">CEO, Company</p>
+<section class="container mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold text-center mb-12">What our clients say</h2>
+    <div class="relative max-w-3xl mx-auto">
+        <div id="testimonials-container" class="overflow-hidden">
+            <div id="testimonials-slider" class="flex transition-transform duration-300 ease-in-out">
+                <div class="testimonial w-full flex-shrink-0">
+                    <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgjhqdf7P7xJaxoUoBeSnTE4RbABBjBB6nw&s" alt="Client" class="w-20 h-20 rounded-full">
+                        <div>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <strong>John Doe</strong>
+                            <p class="text-gray-600">CEO, Company</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/049/647/319/small_2x/a-man-with-a-beard-and-a-smile-is-surrounded-by-gold-confetti-the-man-is-happy-and-enjoying-the-moment-photo.jpg" alt="Client" class="w-20 h-20 rounded-full">
-                <div>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <strong>Jane Smith</strong>
-                    <p class="text-gray-600">Director, Company</p>
+                <div class="testimonial w-full flex-shrink-0">
+                    <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/049/647/319/small_2x/a-man-with-a-beard-and-a-smile-is-surrounded-by-gold-confetti-the-man-is-happy-and-enjoying-the-moment-photo.jpg" alt="Client" class="w-20 h-20 rounded-full">
+                        <div>
+                            <p class="mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <strong>Jane Smith</strong>
+                            <p class="text-gray-600">Director, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial w-full flex-shrink-0">
+                    <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEwwVRjvwVMGrNdIlTULKaRQrFwgxNsJzmw&s" alt="Client" class="w-20 h-20 rounded-full">
+                        <div>
+                            <p class="mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <strong>Mike Johnson</strong>
+                            <p class="text-gray-600">Manager, Company</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <button id="prev-testimonial" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next-testimonial" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            <i class="fas fa-chevron-right"></i>
+        </button>
     </div>
+</section>
+
+    <!-- Contact Form -->
+    <section id="Contact" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <form id="contact-form" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600" rows="4"></textarea>
+                </div>
+                <button type="submit" class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-yellow-600 hover:rounded-xl transition-colors"><a href="https://wa.me/919625943868" target="_blank" rel="noopener noreferrer">Send Message </a></button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer id="Contact" class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div>
@@ -163,32 +214,34 @@
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/919625943868" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Link</h3>
                     <ul class="space-y-2">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#About">About Us</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Work">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Our Service</h3>
                     <ul class="space-y-2">
-                        <li><a href="#">Building</a></li>
-                        <li><a href="#">Renovation</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#Services">Building</a></li>
+                        <li><a href="#Services">Renovation</a></li>
+                        <li><a href="#Services">Construction</a></li>
+                        <li><a href="#Services">Repairs</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <ul class="space-y-2">
                         <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Street, City, Country</li>
-                        <li><i class="fas fa-envelope mr-2"></i> info@example.com</li>
+                        <li><i class="fas fa-envelope mr-2"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="325b5c545d72574a535f425e571c515d5f">[email&#160;protected]</a></li>
                         <li><i class="fas fa-phone mr-2"></i> +1234567890</li>
+                        <li><i class="fab fa-whatsapp mr-2"></i> <a href="https://wa.me/919625943868" target="_blank" rel="noopener noreferrer">+91 9625943868</a></li>
                     </ul>
                 </div>
             </div>
@@ -197,8 +250,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="fixed bottom-4 right-4 bg-yellow-600 text-white p-2 rounded-full hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
 
